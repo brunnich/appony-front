@@ -17,3 +17,4 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+Front repository for Appony application : powered by Vue.js
