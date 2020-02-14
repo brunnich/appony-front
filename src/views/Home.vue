@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld :msg="$store.state.msgValue"/>
+    <button class="button" @click="changeMsg()">Change MSG</button>
   </div>
 </template>
 
@@ -13,6 +14,12 @@ export default {
   name: 'Home',
   components: {
     HelloWorld
+  },
+  methods: {
+    changeMsg() {
+      console.log("test");
+      this.$store.dispatch('updateMessage', "Test");
+    }
   }
 }
 </script>
